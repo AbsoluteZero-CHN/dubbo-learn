@@ -1,0 +1,19 @@
+
+spring:
+  application:
+   name: dubbo-provider
+dubbo:
+  application:
+    name: dubbo-provider
+  registry:
+    address: zookeeper://127.0.0.1:2181
+    file: E:\tmp\dubbo\provider\dubbo.cache
+  protocol:
+    name: dubbo
+    port: 9001
+  scan:
+    base-packages: cn.noload
+  config-center:
+    timeout: 30000
+server:
+  port: 9101

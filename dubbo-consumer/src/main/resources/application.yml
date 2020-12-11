@@ -1,0 +1,14 @@
+
+
+spring:
+  application:
+   name: dubbo-consumer
+server:
+  port: 9100
+
+dubbo:
+  registry:
+    address: zookeeper://127.0.0.1:2181
+    file: E:\tmp\dubbo\consumer\dubbo.cache
+  config-center:
+    timeout: 30000
